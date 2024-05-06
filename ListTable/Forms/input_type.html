@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of input, we can take?</title>
+</head>
+<body>
+    <form action="/catchme.php">
+        <label for="modelname"> Model name : </label>
+        <input type="text" name="Model" id="modelname" placeholder="Enter model name" required><br>
+        <label for="countryOfModel">Country : </label>
+        <input type="text" name="Country" id="countryOfModel" placeholder="Country Of Model" required><br>
+        
+        Password : <input type="password"><br>
+
+        <label for="start">Start date:</label>
+
+        <input type="date" id="start" name="trip-start" value="25-01-2022" min="25-01-2022" max="25-01-2024" /><br>
+        File : <input type="file"><br>
+        Color : <input type="color" name="T-ShirtColor"><br>
+        Range : <input type="range" min="500" max="1000" step="any"><br>
+        Submit : <input type="submit"><br>
+        
+        <!-- custom button, here we have to fill value attribute, so we know button's purpose, example : value = "anything" -->
+
+        CustomButton : <input type="button"  value="Catch Me"><br><br><br>
+
+
+        RadioButton <br><br>
+
+        If name is same for a group of radio buttons, then we can select only one option. <br><br>
+
+        Male : <input type="radio" id="m" name="gender" value="Male"><br> <!-- value = "Male" will be submitted -->
+        Female : <input type="radio" id="f" name="gender" value="Female"><br> <!-- value = "Female" will be submitted -->
+        Other : <input type="radio" id="O" name="gender" value="Other"><br> <!-- value = "Other" will be submitted --> <br><br><br>
+        
+        If name is NOT SAME for a group of radio buttons, then we can select ONE or MORE option. <br><br>
+        Male : <input type="radio"  name="gender" value="Male"><br> 
+        Female : <input type="radio"  name="gender1" value="Female"><br> 
+        Other : <input type="radio"  name="gender2" value="Other"><br> <br><br><br>
+
+        To CONNECT label and button  <br><br>
+        <label for="male">Male : </label>
+        <input type="radio" id="male" name="gender" value="Male"><br> <!-- value = "Male" will be submitted -->
+        <label for="female"> Female : </label>
+        <input type="radio" id="female" name="gender" value="Female"><br> <!-- value = "Female" will be submitted -->
+        <label for="Other">Other</label>
+        <input type="radio" id="Other" name="gender" value="Other"><br> <!-- value = "Other" will be submitted --> <br><br><br>
+        
+
+
+                
+</body>
+</html>
